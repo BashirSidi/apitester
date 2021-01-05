@@ -1,0 +1,32 @@
+{
+	"name": "phonebook",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "cross-env NODE_ENV=production node index.js",
+		"test": "cross-env NODE_ENV=test jest --verbose --runInBand",
+		"dev": "cross-env NODE_ENV=development npx nodemon"
+	},
+	"author": "bashir sidi",
+	"license": "ISC",
+	"dependencies": {
+		"body-parser": "^1.19.0",
+		"cors": "^2.8.5",
+		"dotenv": "^8.2.0",
+		"express": "^4.17.1",
+		"lodash": "^4.17.20",
+		"mongoose": "^5.11.0",
+		"mongoose-unique-validator": "^2.0.3",
+		"morgan": "^1.10.0",
+		"nodemon": "^2.0.6"
+	},
+	"devDependencies": {
+		"cross-env": "^7.0.3",
+		"jest": "^26.6.3",
+		"supertest": "^6.0.1"
+	},
+	"jest": {
+		"testEnvironment": "node"
+	}
+}
